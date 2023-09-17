@@ -1,0 +1,63 @@
+.menu-option {
+    padding-left: 32px;
+    color: var(--off-white);
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--off-blue);
+    transition: 0.7s linear;
+    width: 100%;
+}
+
+.menu-option:hover {
+    filter: brightness(0.85);
+    transition: 0.7s linear;
+    cursor: pointer;
+}
+
+.drawer {
+    background-color: var(--off-bean);
+}
+
+.close-icon.anticon-close-circle {
+    color: var(--off-white);
+    font-size: 30px;
+    transition: 0.2s linear;
+}
+
+.close-icon.anticon-close-circle:hover {
+    color: red;
+    transition: 0.2s linear;
+
+}
+
+.header {
+    width: 80vw;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--main-black);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    gap: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.menu {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.content {
+    background-color: var(--off-blue);
+}

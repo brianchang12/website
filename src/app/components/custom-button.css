@@ -1,0 +1,5 @@
+.custom:hover {
+    filter: brightness(1.4);
+    transition: 0.7s linear;
+
+}
