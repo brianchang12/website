@@ -2,21 +2,30 @@
     padding-left: 32px;
     color: var(--off-white);
     font-size: 22px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: var(--off-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--main-black);
     transition: 0.7s linear;
     width: 100%;
 }
 
 .menu-option:hover {
-    filter: brightness(0.85);
-    transition: 0.7s linear;
+    filter: brightness(1.5);
+    transition: 0.5s linear;
     cursor: pointer;
 }
 
+.menu-subsection {
+    height: 50vh;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .drawer {
-    background-color: var(--off-bean);
+    background-color: var(--dark-green);
 }
 
 .close-icon.anticon-close-circle {
@@ -50,7 +59,7 @@
     height: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0px;
 }
 

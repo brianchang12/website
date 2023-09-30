@@ -8,12 +8,7 @@
 }
 
 .header-option:hover {
-    background-color: var(--dull-light-green);
+    background-color: var(--mid-green);
     transition: 0.3s linear;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .header-option {
-      background-color: lightblue;
-    }
-  } */

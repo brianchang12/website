@@ -15,6 +15,7 @@ interface CustomButtonProps {
   borderWidth?: string;
   borderColor?: string;
   padding?: string;
+  boxShadow?: string;
 }
 
 const CustomButton: FC<CustomButtonProps> = ({
@@ -29,7 +30,8 @@ const CustomButton: FC<CustomButtonProps> = ({
   borderStyle,
   borderWidth,
   borderColor,
-  padding
+  padding,
+  boxShadow,
 }) => {
   return (
     <button
@@ -50,6 +52,7 @@ const CustomButton: FC<CustomButtonProps> = ({
         borderWidth: borderWidth,
         borderColor: borderColor,
         padding: padding,
+        boxShadow: boxShadow,
       }}
     >
       {icon && icon}
