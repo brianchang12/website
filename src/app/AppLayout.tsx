@@ -1,9 +1,9 @@
 "use client";
-import { Layout, Button, Menu, Drawer, Typography } from "antd";
+import { Button, Drawer } from "antd";
 import Icon, {
   CloseCircleOutlined,
-  LineChartOutlined,
   LinkedinOutlined,
+  MenuOutlined,
 } from "@ant-design/icons";
 import React, { FC, useState } from "react";
 import "./globals.css";
@@ -19,6 +19,8 @@ interface AppLayoutProps {
 }
 
 const AppLayout: FC<AppLayoutProps> = ({ children }) => {
+  const removeLinkedinSize = 930;
+  const burgerSize = 630;
   const [open, setOpen] = useState(false);
   const view = useViewport();
 
@@ -52,74 +54,59 @@ const AppLayout: FC<AppLayoutProps> = ({ children }) => {
           </li>
         </ul>
       </Drawer>
-      {/* <Layout>
-                <Header className='header'>
-                    <div>
-                        <p>
-                        </p>
-                    </div>
-                </Header>
-                <Content className='content'>
-                    <HeaderOption text='About Me' fontSize='20px' width='70px' height='20px'/>
-                    <Button onClick={showDrawer}>test</Button>
-                </Content>
-                <Footer>Footer</Footer>
-            </Layout> */}
       <div className="header">
         <Image
           src={logo}
           alt="logo"
           style={{ width: "110px", height: "110px" }}
         />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-            gap: "20px",
-          }}
-        >
-          <HeaderOption
-            text="About Me"
-            fontSize="14px"
-            width="auto"
-            height="auto"
-          />
-          <HeaderOption
-            text="Work Experience"
-            fontSize="14px"
-            width="auto"
-            height="auto"
-          />
-          <HeaderOption
-            text="Projects"
-            fontSize="14px"
-            width="auto"
-            height="auto"
-          />
-        <a>
-          <CustomButton
-            icon={<LinkedinOutlined style={{ color: "white", fontSize: "25px" }} />}
-            text="Connect on LinkedIn"
-            height="auto"
-            width="auto"
-            fontSize="14px"
-            padding="8px 15px"
-            color="white"
-            borderStyle="none"
-            backgroundColor="#5C8374"
-            borderRadius="20px"
-          />
-        </a>
-        </div>
+        { view.width >= burgerSize ?
+            <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+              gap: "20px",
+            }}
+          >
+            <HeaderOption
+              text="About Me"
+              fontSize="14px"
+              width="auto"
+              height="auto"
+            />
+            <HeaderOption
+              text="Work Experience"
+              fontSize="14px"
+              width="auto"
+              height="auto"
+            />
+            <HeaderOption
+              text="Projects"
+              fontSize="14px"
+              width="auto"
+              height="auto"
+            />
+            { view.width >= removeLinkedinSize ?
+                 <a href="https://www.linkedin.com/in/lichengchang/" style={{textDecoration: 'none'}}>
+                 <CustomButton
+                   icon={<LinkedinOutlined style={{ color: "white", fontSize: "25px" }} />}
+                   text="Connect on LinkedIn"
+                   height="auto"
+                   width="auto"
+                   fontSize="14px"
+                   padding="8px 15px"
+                   color="white"
+                   borderStyle="none"
+                   backgroundColor="#5C8374"
+                   borderRadius="20px"
+                 />
+               </a> : undefined
+            }
+          </div>
+          : <MenuOutlined className="hamburger" onClick={showDrawer}/>
+        }
       </div>
-      <Button onClick={showDrawer}>test</Button>
-      <Button
-        icon={<LinkedinOutlined style={{ color: "white" }} />}
-        style={{ backgroundColor: "--off-blue" }}
-      >
-        Test2
-      </Button>
     </>
   );
 };
