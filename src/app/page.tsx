@@ -1,9 +1,13 @@
-import { Button } from 'antd'
+
+import React from 'react'
+import TitleCard from './components/TitleCard'
+import IntroductionCard from './components/IntroductionCard'
 
 export default function Home() {
   return (
-   
-         <Button type='default'>hello</Button>
-    
+        <div className="content">
+            <TitleCard />
+            <IntroductionCard />        
+        </div>
   )
 }

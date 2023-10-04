@@ -1,0 +1,44 @@
+.hero {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    border: 0.5px black solid;
+    box-shadow: 0px 3px 8px rgb(0, 0, 0, 0.2);
+}
+
+.intro-container {
+    height: auto;
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-me-container {
+    align-self: baseline;
+    height: auto;
+    width: 670px;
+}
+
+.divider {
+    height: 550px;
+    border-width: 3px;
+    color: var(--mid-green);
+}
+
+.intro-title {
+    font-weight: 700;
+    color: var(--off-white);
+    text-shadow: 5px 5px 20px rgb(0, 0, 0, 0.3);
+    font-size: 32px;
+    margin: 0px 0px;
+
+}
+
+.intro-text {
+    color: var(--dark-green);
+    font-size: 18px;
+}

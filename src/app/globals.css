@@ -1,20 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito+Sans:opsz@6..12&family=Playfair+Display:ital@0;1&family=Roboto:wght@400;500&display=swap');
+
 
 html, body {
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
-li, p, ul, button {
+li, p, ul, button, h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
 :root {
     --off-white: #c8d8e4;
-    --light-grey: #f2f2f2;
+    --light-grey: #2f2d2d;
     --mid-green: #5C8374;
     --off-blue: #2b6777;
     --main-black: #040D12;
     --dark-green: #183D3D;
     --light-green: #93B1A6;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 120px 40px 20px 40px;
+    gap: 200px;
+}
+
+@media  (max-width: 800px) {
+    .content {
+        gap: 100px;
+    }
+    
+}
+
+@media  (max-width: 440px) {
+    .content {
+        padding: 100px 5px 20px 5px;
+        gap: 50px;
+    }
+    
 }

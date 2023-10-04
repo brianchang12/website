@@ -5,13 +5,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: var(--main-black);
-    transition: 0.7s linear;
-    width: 100%;
+    width: 75%;
 }
 
 .menu-option:hover {
-    filter: brightness(1.5);
-    transition: 0.5s linear;
+    background-color: var(--light-grey);
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -41,6 +40,9 @@
 }
 
 .header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
     width: 80vw;
     height: 115px;
     display: flex;
@@ -49,26 +51,24 @@
     align-items: center;
     gap: 10px;
     background-color: var(--main-black);
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
     gap: 20px;
     padding-left: 10vw;
     padding-right: 10vw;
+    margin-bottom: 150px;
 }
 
 .menu {
     height: 25%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 0px;
 }
 
 ul {
     list-style-type: none;
-}
-
-.content {
-    background-color: var(--off-blue);
 }
 
 .hamburger {
@@ -79,4 +79,9 @@ ul {
 .hamburger:hover {
     filter: brightness(1.5);
     transition: 0.6s linear;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--light-green);
 }
