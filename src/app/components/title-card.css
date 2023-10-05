@@ -7,7 +7,7 @@
 }
 
 .title-container {
-    align-self: baseline;
+
     width: 1200px
 }
 
@@ -18,12 +18,12 @@
     margin: 0px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .title-container {
         width: 900px;
     }
     .title {
-        font-size: 120px;
+        font-size: 130px;
     }
 }
 

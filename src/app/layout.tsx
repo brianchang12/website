@@ -190,7 +190,7 @@ export default function RootLayout({
                   ) : undefined}
                 </div>
               ) : (
-                <MenuOutlined className="hamburger" onClick={showDrawer} />
+                <MenuOutlined style={{color: "white", fontSize: "30px"}} onClick={showDrawer} />
               )}
             </div>
             {children}
