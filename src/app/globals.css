@@ -2,6 +2,7 @@
 
 html, body {
     font-family: 'Montserrat', sans-serif;
+    backface-visibility: hidden;
 }
 
 li, p, ul, button, h1 {

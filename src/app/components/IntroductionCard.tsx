@@ -40,11 +40,11 @@ export default function IntroductionCard() {
           </h4>
           <p className="intro-text">
             Hello, I&#39;m Brian, an aspiring and passionate software developer
-            with a deep love for all things tech. My journey in the world of
+            with a love about learning for all things tech. My journey in the world of
             software development began at the University of British Columbia
             where I was accepted into the Computer Science program. Since then,
             I&#39;ve been on an exhilarating adventure, constantly expanding my
-            knowledge and honing my skills in the ever-evolving landscape of
+            knowledge and honing my skills in the ever-changing landscape of
             software development.
             <br />
             <br />

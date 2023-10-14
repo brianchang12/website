@@ -89,7 +89,7 @@ export default function RootLayout({
               </ul>
               <div className="menu-subsection">
                 <a
-                  href="https://github.com/personalbrian"
+                  href="https://github.com/brianchang12"
                   style={{ textDecoration: "none" }}
                 >
                   <CustomButton
@@ -110,7 +110,7 @@ export default function RootLayout({
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/lichengchang/"
+                  href="https://www.linkedin.com/in/bcoding12/"
                   style={{ textDecoration: "none" }}
                 >
                   <CustomButton
@@ -167,7 +167,7 @@ export default function RootLayout({
                   />
                   {view.width >= removeLinkedinSize ? (
                     <a
-                      href="https://www.linkedin.com/in/lichengchang/"
+                      href="https://www.linkedin.com/in/bcoding12/"
                       style={{ textDecoration: "none" }}
                     >
                       <CustomButton

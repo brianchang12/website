@@ -11,9 +11,9 @@ function WorkCard() {
             Work Experience
         </h2>
         <div className='work-content-container'>
+        <WorkTile tools={TeslaInfo.tools} logo={TeslaInfo.logo} location={TeslaInfo.location} dates={TeslaInfo.dates} company={TeslaInfo.company} title={TeslaInfo.title} accomplishments={TeslaInfo.accomplishments} />
       <WorkTile tools={RivanInfo.tools} logo={RivanInfo.logo} location={RivanInfo.location} dates={RivanInfo.dates} company={RivanInfo.company} title={RivanInfo.title} accomplishments={RivanInfo.accomplishments} />
       <WorkTile tools={UBCInfo.tools} logo={UBCInfo.logo} location={UBCInfo.location} dates={UBCInfo.dates} company={UBCInfo.company} title={UBCInfo.title} accomplishments={UBCInfo.accomplishments} />
-      <WorkTile tools={TeslaInfo.tools} logo={TeslaInfo.logo} location={TeslaInfo.location} dates={TeslaInfo.dates} company={TeslaInfo.company} title={TeslaInfo.title} accomplishments={TeslaInfo.accomplishments} />
       </div>
     </div>
   )
