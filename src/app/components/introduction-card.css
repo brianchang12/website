@@ -1,6 +1,7 @@
 .hero {
-    width: 400px;
-    height: 500px;
+    width: clamp(270px, 50%, 400px);
+    height: auto;
+    max-height: 500px;
     border-radius: 20px;
     object-fit: cover;
     filter: brightness(0.8);
@@ -13,14 +14,15 @@
     width: 1300px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 30px;
+    justify-content: center;
     align-items: center;
 }
 
 .about-me-container {
-    align-self: baseline;
+    align-self: center;
     height: auto;
-    width: 620px;
+    width: 50%;
 }
 
 .intro-title {
@@ -44,19 +46,33 @@
     align-items: center;
 }
 
+.intro-divider {
+    border-width: 3px;
+    height: auto;
+    color: var(--mid-green);
+}
+
 @media screen and (max-width: 1250px) {
     
     .intro-title {
-        font-size: 24px;
+        font-size: 26px;
     }
     .intro-text {
-        font-size: 14px;
-    }
-    .about-me-container {
-        width: 550px;
+        font-size: 16px;
     }
     .intro-container {
-        width: 1050px;
+        width: 95vw;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-container {
+        width: 85%
     }
     
 }
