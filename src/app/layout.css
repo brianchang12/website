@@ -71,17 +71,43 @@ ul {
   list-style-type: none;
 }
 
-.hamburger {
-  font-size: 25px;
-  color: var(--off-white);
-}
 
-.hamburger:hover {
-  filter: brightness(1.5);
-  transition: 0.6s linear;
+.anticon.anticon-menu {
+    font-size: 25px;
+    color: var(--off-white);
 }
+.anticon.anticon-menu:hover {
+    filter: brightness(1.5);
+    transition: 0.6s linear;
+  }
+
 
 body {
   margin: 0px;
   background-color: var(--light-green);
 }
+
+.main-header-option {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 630px) {
+    .main-header-option {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .anticon.anticon-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .linkedin-wrapper {
+        display: none;
+    }
+}
+
+/* const removeLinkedinSize = 930;
+const burgerSize = 630; */

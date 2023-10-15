@@ -11,18 +11,18 @@ import { useViewport } from "../utils/Utils";
 
 export default function IntroductionCard() {
   const view = useViewport();
-  const divider =
-    view.width <= 950 ? (
-      <Divider
-        type="horizontal"
-        style={{ borderWidth: "3px", width: "100px", color: "black" }}
-      />
-    ) : (
-      <Divider
-        type="vertical"
-        style={{ borderWidth: "3px", height: "500px", color: "black" }}
-      />
-    );
+//   const divider =
+//     view.width <= 950 ? (
+//       <Divider
+//         type="horizontal"
+//         style={{ borderWidth: "3px", width: "100px", color: "black" }}
+//       />
+//     ) : (
+//       <Divider
+//         type="vertical"
+//         style={{ borderWidth: "3px", height: "500px", color: "black" }}
+//       />
+//     );
   return (
     <motion.div
       viewport={{ once: true }}
@@ -33,7 +33,6 @@ export default function IntroductionCard() {
       <a id="about-me" style={{ width: "auto", height: "auto" }}>
         <div className="intro-container">
           <Image className="hero" src={hero} alt="brian's profile picture" />
-          {divider}
           <div className="about-me-container">
             <h4 className="intro-title">
               I am Brian Chang, aspiring Software Developer and student at the

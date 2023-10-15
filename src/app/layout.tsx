@@ -3,7 +3,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import React, { useState } from "react";
 import AntdRegistry from "./AntdRegistry";
-import { useViewport } from "./utils/Utils";
 import {
   CloseCircleOutlined,
   LinkedinOutlined,
@@ -22,11 +21,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const removeLinkedinSize = 930;
-  const burgerSize = 630;
   const [open, setOpen] = useState(false);
-  const view = useViewport();
-
   const showDrawer = () => {
     setOpen(true);
   };
@@ -159,7 +154,6 @@ export default function RootLayout({
                 alt="logo"
                 style={{ width: "110px", height: "110px" }}
               />
-              {view.width >= burgerSize ? (
                 <div
                   style={{
                     display: "flex",
@@ -168,7 +162,7 @@ export default function RootLayout({
                     gap: "20px",
                   }}
                 >
-                  <a href="#about-me" style={{ textDecoration: "none" }}>
+                  <a href="#about-me" className="main-header-option">
                     <HeaderOption
                       text="About Me"
                       fontSize="14px"
@@ -176,7 +170,7 @@ export default function RootLayout({
                       height="auto"
                     />
                   </a>
-                  <a href="#work-experience" style={{ textDecoration: "none" }}>
+                  <a href="#work-experience" className="main-header-option" >
                     <HeaderOption
                       text="Work Experience"
                       fontSize="14px"
@@ -184,7 +178,7 @@ export default function RootLayout({
                       height="auto"
                     />
                   </a>
-                  <a href="#projects" style={{ textDecoration: "none" }}>
+                  <a href="#projects" className="main-header-option">
                     <HeaderOption
                       text="Projects"
                       fontSize="14px"
@@ -192,8 +186,8 @@ export default function RootLayout({
                       height="auto"
                     />
                   </a>
-                  {view.width >= removeLinkedinSize ? (
                     <a
+                     className="linkedin-wrapper"
                       href="https://www.linkedin.com/in/bcoding12/"
                       style={{ textDecoration: "none" }}
                     >
@@ -214,14 +208,11 @@ export default function RootLayout({
                         borderRadius="20px"
                       />
                     </a>
-                  ) : undefined}
                 </div>
-              ) : (
                 <MenuOutlined
-                  style={{ color: "white", fontSize: "30px" }}
+                //   style={{fontSize: "30px", color: "white"}}
                   onClick={showDrawer}
                 />
-              )}
             </div>
             {children}
           </>
