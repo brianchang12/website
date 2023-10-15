@@ -7,6 +7,7 @@ import "./introduction-card.css";
 import CustomButton from "./CustomButton";
 import { DownloadOutlined } from "@ant-design/icons";
 
+
 export default function IntroductionCard() {
   return (
     <motion.div
@@ -64,8 +65,8 @@ export default function IntroductionCard() {
               </span>
             </p>
             <a
-              href={window.location.origin + "/revamp-resume-2.pdf"}
-              download={"brian-resume.pdf"}
+              href={"/brian-resume.pdf"}
+              download
               style={{ textDecoration: "none" }}
             >
               <div className="intro-btn-format">
