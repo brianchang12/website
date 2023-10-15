@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { FC } from "react";
 import { GithubOutlined } from "@ant-design/icons";
 import "./project-tile.css";

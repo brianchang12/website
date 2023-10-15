@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "../globals.css";
-import "./custom-button.css"
+import "./custom-button.css";
 
 interface CustomButtonProps {
   icon?: React.ReactNode;

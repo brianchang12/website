@@ -1,78 +1,74 @@
 .hero {
-    width: clamp(270px, 50%, 400px);
-    height: auto;
-    max-height: 500px;
-    border-radius: 20px;
-    object-fit: cover;
-    filter: brightness(0.8);
-    border: 0.5px black solid;
-    box-shadow: 0px 3px 8px rgb(0, 0, 0, 0.2);
+  width: clamp(270px, 50%, 400px);
+  height: auto;
+  max-height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(0.8);
+  border: 0.5px black solid;
+  box-shadow: 0px 3px 8px rgb(0, 0, 0, 0.2);
 }
 
 .intro-container {
-    height: auto;
-    width: 1300px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  height: auto;
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me-container {
-    align-self: center;
-    height: auto;
-    width: 50%;
+  align-self: center;
+  height: auto;
+  width: 50%;
 }
 
 .intro-title {
-    font-weight: 700;
-    color: var(--off-white);
-    text-shadow: 5px 5px 20px rgb(0, 0, 0, 0.3);
-    font-size: 32px;
-    margin: 0px 0px;
-
+  font-weight: 700;
+  color: var(--off-white);
+  text-shadow: 5px 5px 20px rgb(0, 0, 0, 0.3);
+  font-size: 32px;
+  margin: 0px 0px;
 }
 
 .intro-text {
-    color: var(--dark-green);
-    font-size: 18px;
-    margin-bottom: 30px;
+  color: var(--dark-green);
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .intro-btn-format {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-divider {
-    border-width: 3px;
-    height: auto;
-    color: var(--mid-green);
+  border-width: 3px;
+  height: auto;
+  color: var(--mid-green);
 }
 
 @media screen and (max-width: 1250px) {
-    
-    .intro-title {
-        font-size: 26px;
-    }
-    .intro-text {
-        font-size: 16px;
-    }
-    .intro-container {
-        width: 95vw;
-    }
-    
+  .intro-title {
+    font-size: 26px;
+  }
+  .intro-text {
+    font-size: 16px;
+  }
+  .intro-container {
+    width: 95vw;
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .intro-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-me-container {
-        width: 85%
-    }
-    
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-container {
+    width: 85%;
+  }
 }

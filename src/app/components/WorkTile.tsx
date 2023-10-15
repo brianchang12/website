@@ -35,47 +35,48 @@ const WorkTile: FC<WorkTileProps> = ({
     return ret.slice(0, -1);
   };
   const unexpanded = (
-      <motion.div
-        whileHover={{
-          scale: 1.1,
-          transition: { duration: 0.5 },
-        }}
-        whileTap={{
-          scale: 0.8,
-          transition: { duration: 0.3 },
-        }}
-        viewport={{ once: true }}
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
-        transition={{ duration: 0.7, type: "spring", delay: 0.1 }}
-        className="unexpanded-tile"
-        onClick={() => {
-          const content = document.getElementById("body")?.style;
-          if (content !== undefined) {
-            content.overflowY = "hidden";
-          }
-          setOpenModal(true);
-        }}
-      >
-        <Image className="unexpanded-image" alt="logo" src={logo} />
-      </motion.div>
+    <motion.div
+      whileHover={{
+        scale: 1.1,
+        transition: { duration: 0.5 },
+      }}
+      whileTap={{
+        scale: 0.8,
+        transition: { duration: 0.3 },
+      }}
+      viewport={{ once: true }}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ duration: 0.7, type: "spring", delay: 0.1 }}
+      className="unexpanded-tile"
+      onClick={() => {
+        const content = document.getElementById("body")?.style;
+        if (content !== undefined) {
+          content.overflowY = "hidden";
+        }
+        setOpenModal(true);
+      }}
+    >
+      <Image className="unexpanded-image" alt="logo" src={logo} />
+    </motion.div>
   );
 
   const expanded = (
     <div className="modal-background">
-      <motion.div className="expanded-modal"
-      initial={{
-        opacity: 0,
-        scale: 0.75,
-    }}
-      animate={{
-        opacity: 1,
-        scale: 1,
-        transition: {
+      <motion.div
+        className="expanded-modal"
+        initial={{
+          opacity: 0,
+          scale: 0.75,
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+          transition: {
             ease: "easeOut",
-            duration: 0.3
-        }
-      }}
+            duration: 0.3,
+          },
+        }}
         exit={{
           opacity: 0,
           scale: 0.75,
@@ -129,7 +130,7 @@ const WorkTile: FC<WorkTileProps> = ({
           </div>
         </div>
       </motion.div>
-      </div>
+    </div>
   );
 
   return (

@@ -1,14 +1,13 @@
 .header-option {
-    color: white;
-    background-color: transparent;
-    border-style: none;
-    font-weight: 400;
-    padding: 13px;
-    border-radius: 10px;
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  font-weight: 400;
+  padding: 13px;
+  border-radius: 10px;
 }
 
 .header-option:hover {
-    background-color: var(--mid-green);
-    transition: 0.3s linear;
+  background-color: var(--mid-green);
+  transition: 0.3s linear;
 }
-

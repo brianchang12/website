@@ -16,7 +16,9 @@ export default function TitleCard() {
         <span className="offset-word">Hello,</span> Welcome to my Website!
       </h1>
       <h4 className="sub">
-        Brian&#39;s Personal Website and E-portfolio. <br/> A showcase of my past works and projects, and anything that I want to post. Thank you for visiting!
+        Brian&#39;s Personal Website and E-portfolio. <br /> A showcase of my
+        past works and projects, and anything that I want to post. Thank you for
+        visiting!
       </h4>
     </motion.div>
   );

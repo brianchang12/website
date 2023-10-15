@@ -1,40 +1,40 @@
-
-
-html, body {
-    font-family: 'Montserrat', sans-serif;
-    backface-visibility: hidden;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  backface-visibility: hidden;
 }
 
-li, p, ul, button, h1 {
-    font-family: 'Montserrat', sans-serif;
+li,
+p,
+ul,
+button,
+h1 {
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
-    --off-white: #c8d8e4;
-    --light-grey: #2f2d2d;
-    --mid-green: #5C8374;
-    --off-blue: #2b6777;
-    --main-black: #040D12;
-    --dark-green: #183D3D;
-    --light-green: #93B1A6;
+  --off-white: #c8d8e4;
+  --light-grey: #2f2d2d;
+  --mid-green: #5c8374;
+  --off-blue: #2b6777;
+  --main-black: #040d12;
+  --dark-green: #183d3d;
+  --light-green: #93b1a6;
 }
-
 
 .content {
-    display: flex;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 80px 40px 80px 40px;
-    gap: 80px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 40px 80px 40px;
+  gap: 80px;
 }
 
-
-@media  (max-width: 440px) {
-    .content {
-        padding: 100px 10px 80px 10px;
-        gap: 30px;
-    }
-    
+@media (max-width: 440px) {
+  .content {
+    padding: 100px 10px 80px 10px;
+    gap: 30px;
+  }
 }

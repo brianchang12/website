@@ -37,34 +37,40 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-        <head>
-        <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport" />
+      <head>
+        <meta
+          content="width=device-width, initial-scale=1, minimum-scale=1"
+          name="viewport"
+        />
         <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="apple-touch-icon.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-          />
-          <link rel="manifest" href="/site.webmanifest" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="anonymous"
-          />
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Nunito+Sans:opsz@6..12&family=Playfair+Display:ital@0;1&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-        </head>
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Nunito+Sans:opsz@6..12&family=Playfair+Display:ital@0;1&family=Roboto:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body id="body">
         <AntdRegistry>
           <>
@@ -78,18 +84,27 @@ export default function RootLayout({
             >
               <ul className="menu">
                 <li className="menu-option" onClick={onClose}>
-                <a href="#about-me" style={{textDecoration: "none", color: "white"}}>
-                  About Me
+                  <a
+                    href="#about-me"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    About Me
                   </a>
                 </li>
                 <li className="menu-option" onClick={onClose}>
-                <a href="#work-experience" style={{textDecoration: "none", color: "white"}}>
-                  Work Experience
+                  <a
+                    href="#work-experience"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Work Experience
                   </a>
                 </li>
                 <li className="menu-option" onClick={onClose}>
-                <a href="#projects" style={{textDecoration: "none", color: "white"}}>
-                  Projects
+                  <a
+                    href="#projects"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Projects
                   </a>
                 </li>
               </ul>
@@ -153,38 +168,29 @@ export default function RootLayout({
                     gap: "20px",
                   }}
                 >
-                    <a
-                      href="#about-me"
-                      style={{ textDecoration: "none" }}
-                    >
-                  <HeaderOption
-                    text="About Me"
-                    fontSize="14px"
-                    width="auto"
-                    height="auto"
-                  />
+                  <a href="#about-me" style={{ textDecoration: "none" }}>
+                    <HeaderOption
+                      text="About Me"
+                      fontSize="14px"
+                      width="auto"
+                      height="auto"
+                    />
                   </a>
-                  <a
-                      href="#work-experience"
-                      style={{ textDecoration: "none" }}
-                    >
-                  <HeaderOption
-                    text="Work Experience"
-                    fontSize="14px"
-                    width="auto"
-                    height="auto"
-                  />
+                  <a href="#work-experience" style={{ textDecoration: "none" }}>
+                    <HeaderOption
+                      text="Work Experience"
+                      fontSize="14px"
+                      width="auto"
+                      height="auto"
+                    />
                   </a>
-                  <a
-                      href="#projects"
-                      style={{ textDecoration: "none" }}
-                    >
-                  <HeaderOption
-                    text="Projects"
-                    fontSize="14px"
-                    width="auto"
-                    height="auto"
-                  />
+                  <a href="#projects" style={{ textDecoration: "none" }}>
+                    <HeaderOption
+                      text="Projects"
+                      fontSize="14px"
+                      width="auto"
+                      height="auto"
+                    />
                   </a>
                   {view.width >= removeLinkedinSize ? (
                     <a
@@ -211,7 +217,10 @@ export default function RootLayout({
                   ) : undefined}
                 </div>
               ) : (
-                <MenuOutlined style={{color: "white", fontSize: "30px"}} onClick={showDrawer} />
+                <MenuOutlined
+                  style={{ color: "white", fontSize: "30px" }}
+                  onClick={showDrawer}
+                />
               )}
             </div>
             {children}

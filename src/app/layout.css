@@ -1,88 +1,87 @@
 .menu-option {
-    padding-left: 32px;
-    color: var(--off-white);
-    font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: var(--main-black);
-    width: 75%;
-    color: white;
+  padding-left: 32px;
+  color: var(--off-white);
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--main-black);
+  width: 75%;
+  color: white;
 }
 
 .menu-option:hover {
-    background-color: var(--light-grey);
-    border-radius: 15px;
-    cursor: pointer;
+  background-color: var(--light-grey);
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .menu-subsection {
-    height: 50vh;
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+  height: 50vh;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .drawer {
-    background-color: var(--dark-green);
+  background-color: var(--dark-green);
 }
 
 .close-icon.anticon-close-circle {
-    color: var(--off-white);
-    font-size: 30px;
-    transition: 0.2s linear;
+  color: var(--off-white);
+  font-size: 30px;
+  transition: 0.2s linear;
 }
 
 .close-icon.anticon-close-circle:hover {
-    color: red;
-    transition: 0.2s linear;
-
+  color: red;
+  transition: 0.2s linear;
 }
 
 .header {
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    width: 80vw;
-    height: 115px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--main-black);
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
-    gap: 20px;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    margin-bottom: 150px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 80vw;
+  height: 115px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--main-black);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-bottom: 150px;
 }
 
 .menu {
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .hamburger {
-    font-size: 25px;
-    color: var(--off-white);
+  font-size: 25px;
+  color: var(--off-white);
 }
 
 .hamburger:hover {
-    filter: brightness(1.5);
-    transition: 0.6s linear;
+  filter: brightness(1.5);
+  transition: 0.6s linear;
 }
 
 body {
-    margin: 0px;
-    background-color: var(--light-green);
+  margin: 0px;
+  background-color: var(--light-green);
 }
