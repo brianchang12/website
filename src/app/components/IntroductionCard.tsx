@@ -15,7 +15,10 @@ export default function IntroductionCard() {
       initial={{ x: "-50vw" }}
       transition={{ duration: 1.2, type: "spring", delay: 0.3 }}
     >
-      <a id="about-me" style={{ width: "auto", height: "auto", scrollMarginTop: "120px"}}>
+      <a
+        id="about-me"
+        style={{ width: "auto", height: "auto", scrollMarginTop: "120px" }}
+      >
         <div className="intro-container">
           <Image className="hero" src={hero} alt="brian's profile picture" />
           <div className="about-me-container">
@@ -60,20 +63,26 @@ export default function IntroductionCard() {
                 React
               </span>
             </p>
-            <div className="intro-btn-format">
-              <CustomButton
-                height="auto"
-                width="300px"
-                text="Download My Resume"
-                fontSize="15px"
-                backgroundColor="#040D12"
-                padding="10px 0px"
-                borderRadius="20px"
-                borderStyle="none"
-                icon={<DownloadOutlined style={{ color: "#c8d8e4" }} />}
-                color="#c8d8e4"
-              />
-            </div>
+            <a
+              href={window.location.origin + "/revamp-resume-2.pdf"}
+              download={"brian-resume.pdf"}
+              style={{ textDecoration: "none" }}
+            >
+              <div className="intro-btn-format">
+                <CustomButton
+                  height="auto"
+                  width="300px"
+                  text="Download My Resume"
+                  fontSize="15px"
+                  backgroundColor="#040D12"
+                  padding="10px 0px"
+                  borderRadius="20px"
+                  borderStyle="none"
+                  icon={<DownloadOutlined style={{ color: "#c8d8e4" }} />}
+                  color="#c8d8e4"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </a>
