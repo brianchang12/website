@@ -30,10 +30,13 @@ export default function IntroductionCard() {
       initial={{ x: "-50vw" }}
       transition={{ duration: 1.2, type: "spring", delay: 0.3 }}
     >
+        <a id="about-me" style={{width: "auto", height: "auto"}}>
       <div className="intro-container">
+      
         <Image className="hero" src={hero} alt="brian's profile picture" />
         {divider}
         <div className="about-me-container">
+       
           <h4 className="intro-title">
             I am Brian Chang, aspiring Software Developer and student at the
             University of British Columbia.
@@ -81,6 +84,7 @@ export default function IntroductionCard() {
           </div>
         </div>
       </div>
+      </a>
     </motion.div>
   );
 }

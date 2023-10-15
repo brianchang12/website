@@ -7,9 +7,14 @@ import { RivanInfo, TeslaInfo, UBCInfo } from '../utils/WorkInfo'
 function WorkCard() {
   return (
     <div className='work-container'>
+         <a
+    id="work-experience"
+    style={{ textDecoration: "none" }}
+  >
         <h2 className='work-title'>
             Work Experience
         </h2>
+        </a>
         <div className='work-content-container'>
         <WorkTile tools={TeslaInfo.tools} logo={TeslaInfo.logo} location={TeslaInfo.location} dates={TeslaInfo.dates} company={TeslaInfo.company} title={TeslaInfo.title} accomplishments={TeslaInfo.accomplishments} />
       <WorkTile tools={RivanInfo.tools} logo={RivanInfo.logo} location={RivanInfo.location} dates={RivanInfo.dates} company={RivanInfo.company} title={RivanInfo.title} accomplishments={RivanInfo.accomplishments} />

@@ -78,13 +78,19 @@ export default function RootLayout({
             >
               <ul className="menu">
                 <li className="menu-option" onClick={onClose}>
+                <a href="#about-me" style={{textDecoration: "none", color: "white"}}>
                   About Me
+                  </a>
                 </li>
                 <li className="menu-option" onClick={onClose}>
+                <a href="#work-experience" style={{textDecoration: "none", color: "white"}}>
                   Work Experience
+                  </a>
                 </li>
                 <li className="menu-option" onClick={onClose}>
+                <a href="#projects" style={{textDecoration: "none", color: "white"}}>
                   Projects
+                  </a>
                 </li>
               </ul>
               <div className="menu-subsection">
@@ -147,24 +153,39 @@ export default function RootLayout({
                     gap: "20px",
                   }}
                 >
+                    <a
+                      href="#about-me"
+                      style={{ textDecoration: "none" }}
+                    >
                   <HeaderOption
                     text="About Me"
                     fontSize="14px"
                     width="auto"
                     height="auto"
                   />
+                  </a>
+                  <a
+                      href="#work-experience"
+                      style={{ textDecoration: "none" }}
+                    >
                   <HeaderOption
                     text="Work Experience"
                     fontSize="14px"
                     width="auto"
                     height="auto"
                   />
+                  </a>
+                  <a
+                      href="#projects"
+                      style={{ textDecoration: "none" }}
+                    >
                   <HeaderOption
                     text="Projects"
                     fontSize="14px"
                     width="auto"
                     height="auto"
                   />
+                  </a>
                   {view.width >= removeLinkedinSize ? (
                     <a
                       href="https://www.linkedin.com/in/bcoding12/"

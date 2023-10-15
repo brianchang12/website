@@ -13,7 +13,7 @@ const HeaderOption: FC<HeaderOptionProps> = ({text, fontSize, width, height}) =>
     return (
         <div>
             <button className='header-option' style={{fontSize: fontSize, width: width, height: height}} >
-                {text}
+                    {text}
             </button>
         </div>
     )
