@@ -2,27 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import hero from "../assets/profile.jpg";
-import { Divider } from "antd";
 import { motion } from "framer-motion";
 import "./introduction-card.css";
 import CustomButton from "./CustomButton";
 import { DownloadOutlined } from "@ant-design/icons";
-import { useViewport } from "../utils/Utils";
 
 export default function IntroductionCard() {
-  const view = useViewport();
-//   const divider =
-//     view.width <= 950 ? (
-//       <Divider
-//         type="horizontal"
-//         style={{ borderWidth: "3px", width: "100px", color: "black" }}
-//       />
-//     ) : (
-//       <Divider
-//         type="vertical"
-//         style={{ borderWidth: "3px", height: "500px", color: "black" }}
-//       />
-//     );
   return (
     <motion.div
       viewport={{ once: true }}
@@ -30,7 +15,7 @@ export default function IntroductionCard() {
       initial={{ x: "-50vw" }}
       transition={{ duration: 1.2, type: "spring", delay: 0.3 }}
     >
-      <a id="about-me" style={{ width: "auto", height: "auto" }}>
+      <a id="about-me" style={{ width: "auto", height: "auto", scrollMarginTop: "120px"}}>
         <div className="intro-container">
           <Image className="hero" src={hero} alt="brian's profile picture" />
           <div className="about-me-container">

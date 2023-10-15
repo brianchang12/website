@@ -4,9 +4,9 @@ import ProjectTile from "./ProjectTile";
 
 function ProjectCard() {
   return (
+    <a id="projects" style={{ scrollMarginTop: "110px"}}>
     <div className="project-container">
       <h2 className="project-title">Techincal Projects</h2>
-      <a id="projects">
         <div className="project-content-container">
           <ProjectTile
             name="Blog Website"
@@ -21,8 +21,8 @@ function ProjectCard() {
             link="https://github.com/brianchang12/website"
           />
         </div>
-      </a>
     </div>
+    </a>
   );
 }
 

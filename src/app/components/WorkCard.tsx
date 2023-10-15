@@ -6,7 +6,7 @@ import { RivanInfo, TeslaInfo, UBCInfo } from "../utils/WorkInfo";
 function WorkCard() {
   return (
     <div className="work-container">
-      <a id="work-experience" style={{ textDecoration: "none" }}>
+      <a id="work-experience" style={{ textDecoration: "none", scrollMarginTop: "110px"}}>
         <h2 className="work-title">Work Experience</h2>
       </a>
       <div className="work-content-container">
