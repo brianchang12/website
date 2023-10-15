@@ -4,7 +4,7 @@ import ProjectTile from "./ProjectTile";
 
 function ProjectCard() {
   return (
-    <a id="projects" style={{ scrollMarginTop: "110px"}}>
+    <a id="projects" style={{ scrollMarginTop: "110px", width: "100%"}}>
     <div className="project-container">
       <h2 className="project-title">Techincal Projects</h2>
         <div className="project-content-container">
