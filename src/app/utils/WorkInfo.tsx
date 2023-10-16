@@ -10,7 +10,7 @@ export const RivanInfo: WorkTileProps = {
   title: "Software Engineer Intern - Mobile Integration",
   tools: ["Python", "Pytest", "Appium", "Postman"],
   accomplishments: [
-    "Signed off on 4 major release versions of Rivan's Android and iOS app by performing manual and automated testing on mobile test matrix",
+    "Signed off on 4 major release versions of Rivian's Android and iOS app by performing manual and automated testing on mobile test matrix",
     "Translated 50 plus E2E manual tests to automated Appium tests by contributing 50 plus new test cases to Pytest Appium framework that checked the presence of various UI elements",
     "Completed test coverage of 30 mobile backend API endpoints by spearheading the development of new Pytest framework that queried the backend results in a controlled envionment",
     "Documented the test plans on Confluence and Jira for over 5 different mobile features by estimating cost resources and defining testing requirements",
